@@ -38,6 +38,7 @@ const App = (props) => {
       <button
         onClick={() => setCurrentSlideNumber(0)}
         data-testid="button-restart"
+        disabled={curSlideNumber === 0}
       >
         Restart
       </button>
